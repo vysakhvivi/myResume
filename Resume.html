@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/27a8a40939.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Arima+Madurai:wght@400;700&family=Assistant:wght@200;300&family=Baloo+2&family=Bungee+Inline&family=Catamaran:wght@100;400;700;800&family=Caveat&family=Cinzel:wght@400;500;800&family=Courier+Prime&family=Cutive+Mono&family=DM+Sans&family=Dosis:wght@200;300&family=Fredericka+the+Great&family=Gruppo&family=Inter:wght@200&family=Julius+Sans+One&family=Kanit:wght@100;300;400;600&family=Kaushan+Script&family=Knewave&family=Limelight&family=Lobster&family=Luckiest+Guy&family=Martel+Sans:wght@300;400&family=Maven+Pro:wght@500;700&family=Montserrat:wght@300&family=Niramit:wght@200&family=Oooh+Baby&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Pacifico&family=Permanent+Marker&family=Play:wght@700&family=Poiret+One&family=Qwitcher+Grypen:wght@700&family=Raleway:wght@600;700&family=Roboto+Mono&family=Russo+One&family=Sanchez&family=Sarpanch:wght@400;900&family=Source+Code+Pro:wght@600&family=Spartan:wght@100&family=Sriracha&family=Staatliches&family=Varela&family=Yellowtail&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet">
+  <style>
+    #cont1 {
+      background: #000428;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #004e92, #000428);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #004e92, #000428);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    #headerimg {
+      width: 250px;
+      height: 250px;
+      margin-left: 65px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+      padding: 3px;
+      border: 2px white solid;
+    }
+
+    .accordion-item {
+      background-color: rgb(3, 3, 3);
+    }
+
+    #headertext {
+      color: white;
+    }
+
+    #header {
+      background: #000428;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #004e92, #000428);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #004e92, #000428);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+    /* .btn-grad {background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+        
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+          }  */
+
+    .btn-grad {
+      background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%)
+    }
+
+    .btn-grad {
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .btn-grad:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .language {
+      margin-left: 20px;
+    }
+
+    #cards {
+      display: flex;
+      float: left;
+      margin-left: 20px;
+    }
+
+    .card {
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+
+    .card:hover {
+      box-shadow: rgba(254, 255, 255, 0.4) 0px 0px 0px 1px, rgba(253, 253, 253, 0.65) 0px 1px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+
+    .projlist  {
+      margin-left: 110px;
+      width: 95%;
+      margin-right: 20px;
+      margin-bottom: 30px;
+     
+    }
+
+    .projlist .li{
+      background-color: rgb(231, 8, 8);
+    }
+
+    .bg-transparent{
+      background-color: #2b8bdf;
+    }
+
+    .list-group-item-info{
+      background-color: #dd247700;
+      color: white;
+      border: none;
+      border-bottom: 2px rgb(0, 0, 0) solid;
+      padding: 10 px;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" id="header">
+      <div class="col-lg-4 col-md-2 col-sm-2">
+
+
+        <img src="./55608117_2136908226405388_6871444397922189312_n.jpg" alt="" id="headerimg">
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8" id=headertext>
+        <h1
+          style="font-size: 70px; margin-top: 40px; text-decoration: underline rgb(255, 74, 2) 8px solid; text-underline-offset: 15px;font-family: 'Russo One', sans-serif; letter-spacing: 6px;">
+          VYSAKH M NAIR</h2>
+          <h3 style="margin-top: 35px; font-family: 'Spartan', sans-serif;">MEARN Stack Developer</h3>
+          <a href="" style="text-decoration: none; color: white;">
+            <h4 style="font-family: 'Spartan', sans-serif;"> <img src="./gmail.png" style="height: 30px; width: 30px;"
+                alt=""> vivimnair@gmail.com</h4>
+          </a>
+          <a href="" style="text-decoration: none; color: white;">
+            <h4 style="font-family: 'Spartan', sans-serif;"> <img src="./Linkein.png" style="height: 33px; width: 39px; margin-left: -3px;"
+                alt=""> www.linkedin.com/in/vysakhvivi</h4>
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="cont1">
+    <div class="container123" id="container2">
+      <div class="row flex-row">
+        <div class="col-lg-3 col-md-3 col-sm-3" style="margin-left: 30px;">
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 40px; " id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px;font-family: 'Montserrat', sans-serif;">OBJECTIVE</button></h3>
+          <P
+            style="font-size: 22px; color: white; text-align: justify; margin-left: 15px; font-family: 'Assistant', sans-serif; font-weight: 300;">
+            To pursue a successful,
+            challenging and exciting, career
+            while being able to dispense my
+            maximum potential to the
+            benefit of the organization and
+            at the same time acquiring
+            knowledge on the road to
+            success.</P>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-8" style="margin-left: 50px;">
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 40px;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif;">EDUCATION</button></h3>
+          <div class="accordion accordion-flush" id="accordionExample"
+            style=" font-family: 'Raleway', sans-serif; margin-left: 20px; ">
+            <div class="accordion-item " style="margin-top: 20px;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button "
+                  style="background: linear-gradient(to right, #004e92, #000428); color: white;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <p
+                    style="font-size: 20px; color: rgb(255, 255, 255); font-family: 'Russo One', sans-serif; letter-spacing: 3px;">
+                    Higher
+                    Secondary</p>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" style="color: rgb(255, 255, 255);"
+                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong style="font-size: 20px;">Carmel Convent English Medium School</strong> <br> Thadiyoor,
+                  Pathanamthitta <br>
+                  62% CGPA
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo" style="border: none;">
+                <button class="accordion-button collapsed accordion-color: white"
+                  style="background: linear-gradient(to right, #004e92, #000428); color: white;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <p
+                    style="font-size: 20px; color: rgb(255, 255, 255); font-family: 'Russo One', sans-serif; letter-spacing: 3px;">
+                    BE Computer Science</p>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" style="color: rgb(255, 242, 242);"
+                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong style="font-size: 20px;">Karavali Institute of Technology</strong> <br> Mangalore, Karnataka
+                  <br>
+                  4th year Dropout
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed "
+                  style="background: linear-gradient(to right, #004e92, #000428); color: white;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <p
+                    style="font-size: 20px; color: rgb(255, 255, 255);font-family: 'Russo One', sans-serif; letter-spacing: 3px;">
+                    MEARN Stack Development</p>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" style="color: rgb(255, 255, 255);"
+                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong style="font-size: 20px;">Luminar Technolab</strong> <br> Ernakulam, Kerala
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container123">
+      <div class="row">
+        <div class="col-3" style="margin-left: 20px; text-align: center; color: white;">
+          <h3 style=" color: white; text-align: center; padding: 5px; margin-top: 10px;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif;">ADDRESS</button></h3>
+          <h4 style="margin-top: 20PX; font-family: 'Assistant', sans-serif; font-weight: 300;">Vysakh M Nair</h4>
+          <h4 style="padding-top: 3px; font-family: 'Assistant', sans-serif; font-weight: 300;">MavilethuKuzhikala (H)
+          </h4>
+          <h4 style="padding-top: 3px; font-family: 'Assistant', sans-serif; font-weight: 300;">Thelliyoor (PO),
+            Thelliyoor</h4>
+          <h4 style="padding-top: 3px; font-family: 'Assistant', sans-serif; font-weight: 300;">Pathanamthitta, Kerala
+          </h4>
+          <h4 style="padding-top: 3px; font-family: 'Assistant', sans-serif; font-weight: 300;">Pin: 689544</h4>
+          <h4 style="padding-top: 3px;font-family: 'Assistant', sans-serif; font-weight: 300;">Mob: 7892138680</h4>
+        </div>
+
+        <div class="col-8" style="margin-left: 50px; ">
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 20px ;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif;">WORK EXPERIENCE</button></h3>
+          <div class="language">
+            <ul style="padding-top: 5px; padding-bottom: 5px; color: white;">
+              <li>
+                <h5 style="margin-top: 10px; font-family: 'Martel Sans', sans-serif; font-size: 22px;">Worked part-time
+                  for a
+                  Wedding Album Design Company</h5>
+              </li>
+              <li>
+                <h5 style="margin-top: 10px; font-family: 'Martel Sans', sans-serif; font-size: 22px;">Worked in
+                  Computer Assembly and Management</h5>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 10px ;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif;">LANGUAGES KNOWN</button></h3>
+          <div class="language">
+            <h5 style="margin-top: 20px; color: white;">C++</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h5 style="margin-top: 10px; color: white;">HTML</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                style="width: 85%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h5 style="margin-top: 10px; color: white;">Typescript</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h5 style="margin-top: 10px; color: white;">JavaScript</h5>
+            <div class="progress " style="margin-bottom: 20px;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container123">
+      <div class="row">
+        <div class="col-3" style="margin-left: 20px; text-align: center; color: white; margin-top: -90px;">
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: -120px ;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif;">HOBBIES</button></h3>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Gaming</h4>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Driving</h4>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Tech Videos</h4>
+
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 100px ;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 24px; font-family: 'Montserrat', sans-serif;">KEY STRENGTHS</button></h3>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Strong Work Ethics</h4>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Honesty</h4>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Dedication</h4>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Open Minded</h4>
+          <h4 style="padding-top: 5px; font-family: 'Assistant', sans-serif; font-weight: 300;">Determination</h4>
+        </div>
+
+        <div class="col-8" style="margin-left: 50px; color: white; margin-bottom: 50px;">
+
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 10px ;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif;">SKILLS</button> </h3>
+          <div class="language" id="cards">
+
+            <!-- <h5>Photo & Video Editing</h5>
+            <H5>PC Hardware Assembly</H5>
+            <H5>PC Reparing</H5>
+            <H5>Tech savvy</H5> -->
+
+            <div class="card" style="width: 200px; background: transparent;">
+              <img src="./pro.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 20px; font-family: 'Martel Sans', sans-serif; text-align: center;">Programming</p>
+              </div>
+            </div>
+            <div class="card" style="width: 200px; background: transparent;">
+              <img src="./Pc Assembly.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 20px; font-family: 'Martel Sans', sans-serif; text-align: center;">PC Assembly</p>
+              </div>
+
+            </div>
+            <div class="card" style="width: 200px; background: transparent;">
+              <img src="./PC repair.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 20px; font-family: 'Martel Sans', sans-serif; text-align: center;">PC Repair</p>
+              </div>
+            </div>
+            <div class="card" style="width: 200px; background: transparent;">
+              <img src="./Tech Savvy.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"
+                  style="font-size: 20px; font-family: 'Martel Sans', sans-serif; text-align: center;">Tech Savvy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container123">
+      <div class="row">
+        <div class="col-3">
+
+        </div>
+
+
+
+        <div class="col-8">
+          <h3 style="color: white; text-align: center; padding: 5px; margin-top: 10px ;" id="buttons"><button
+              type="button" class="btn btn-grad"
+              style="width: 100%; font-size: 28px; font-family: 'Montserrat', sans-serif; margin-left: 80px;">Projects
+              Done</button> </h3>
+          <ol class="list-group list-group-numbered projlist">
+            <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-info">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold" style="font-size:20px ;">WeatherAPI</div>
+                An Api to get the weather detials of a given place
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-info">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold" style="font-size:20px ;">BankApp</div>
+                A Web Application for users to interact with various banking events such as deposit,withdraw etc.
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-info">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold" style="font-size:20px ;">ReminderApp</div>
+                A reminder Web application to enable users to add, view the reminders and more ..
+              </div>
+            </li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
